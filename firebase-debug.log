@@ -1,0 +1,79 @@
+[debug] [2024-12-01T22:44:20.799Z] ----------------------------------------------------------------------
+[debug] [2024-12-01T22:44:20.801Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Allen\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-12-01T22:44:20.802Z] CLI Version:   13.27.0
+[debug] [2024-12-01T22:44:20.802Z] Platform:      win32
+[debug] [2024-12-01T22:44:20.802Z] Node Version:  v20.17.0
+[debug] [2024-12-01T22:44:20.802Z] Time:          Mon Dec 02 2024 04:14:20 GMT+0530 (India Standard Time)
+[debug] [2024-12-01T22:44:20.802Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-01T22:44:20.881Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-01T22:44:20.882Z] > authorizing via signed-in user (fernandezallen234@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Allen\IRIS\CodeHub
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-12-01T22:44:27.443Z] Using project from CLI flag: codehub-1424
+[debug] [2024-12-01T22:44:27.444Z] Checked if tokens are valid: false, expires at: 1733089314083
+[debug] [2024-12-01T22:44:27.444Z] Checked if tokens are valid: false, expires at: 1733089314083
+[debug] [2024-12-01T22:44:27.445Z] > refreshing access token with scopes: []
+[debug] [2024-12-01T22:44:27.446Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-12-01T22:44:27.446Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-12-01T22:44:27.682Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-12-01T22:44:27.682Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-12-01T22:44:27.693Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/codehub-1424 [none]
+[debug] [2024-12-01T22:44:28.327Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/codehub-1424 200
+[debug] [2024-12-01T22:44:28.327Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/codehub-1424 {"projectId":"codehub-1424","projectNumber":"475778541364","displayName":"CodeHub","name":"projects/codehub-1424","resources":{"hostingSite":"codehub-1424"},"state":"ACTIVE","etag":"1_bb6db07f-9002-4473-9bad-af59590a641a"}
+[info] i  Using project codehub-1424 (CodeHub) 
+[info] 
+=== Hosting Setup
+[debug] [2024-12-01T22:44:28.332Z] Checked if tokens are valid: true, expires at: 1733096666682
+[debug] [2024-12-01T22:44:28.332Z] Checked if tokens are valid: true, expires at: 1733096666682
+[debug] [2024-12-01T22:44:28.332Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/codehub-1424 [none]
+[debug] [2024-12-01T22:44:28.877Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/codehub-1424 200
+[debug] [2024-12-01T22:44:28.877Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/codehub-1424 {"projectId":"codehub-1424","projectNumber":"475778541364","displayName":"CodeHub","name":"projects/codehub-1424","resources":{"hostingSite":"codehub-1424"},"state":"ACTIVE","etag":"1_bb6db07f-9002-4473-9bad-af59590a641a"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] +  Wrote public/404.html 
+[debug] [2024-12-01T22:44:44.767Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2024-12-01T22:44:44.946Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2024-12-01T22:44:44.946Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"11.0.2","browserURL":"https://www.gstatic.com/firebasejs/11.0.2/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/11.0.2/firebase.tgz"},"live":{"version":"11.0","browserURL":"https://www.gstatic.com/firebasejs/live/11.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/11.0/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/11.0.2/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/11.0.2/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/11.0.2/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/11.0.2/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/11.0.2/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/11.0.2/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/11.0.2/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/11.0.2/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/11.0.2/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/11.0.2/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/11.0.2/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/11.0.2/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/11.0.2/firebase-database.js","vertexai":"https://www.gstatic.com/firebasejs/11.0.2/firebase-vertexai.js","data-connect":"https://www.gstatic.com/firebasejs/11.0.2/firebase-data-connect.js","firestore.memory":"https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\Users\Allen\IRIS\CodeHub is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=189354306&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-12-01T22:45:12.226Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2024-12-01T22:45:12.227Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2024-12-01T22:45:12.553Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2024-12-01T22:45:12.553Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2024-12-01T22:45:12.570Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2024-12-01T22:45:12.922Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2024-12-01T22:45:12.922Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"Allen1406","id":180046206,"node_id":"U_kgDOCrtJfg","avatar_url":"https://avatars.githubusercontent.com/u/180046206?v=4","gravatar_id":"","url":"https://api.github.com/users/Allen1406","html_url":"https://github.com/Allen1406","followers_url":"https://api.github.com/users/Allen1406/followers","following_url":"https://api.github.com/users/Allen1406/following{/other_user}","gists_url":"https://api.github.com/users/Allen1406/gists{/gist_id}","starred_url":"https://api.github.com/users/Allen1406/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Allen1406/subscriptions","organizations_url":"https://api.github.com/users/Allen1406/orgs","repos_url":"https://api.github.com/users/Allen1406/repos","events_url":"https://api.github.com/users/Allen1406/events{/privacy}","received_events_url":"https://api.github.com/users/Allen1406/received_events","type":"User","user_view_type":"private","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"notification_email":null,"public_repos":3,"public_gists":0,"followers":1,"following":6,"created_at":"2024-08-31T18:34:34Z","updated_at":"2024-12-01T22:45:09Z","private_gists":0,"total_private_repos":1,"owned_private_repos":1,"disk_usage":745,"collaborators":0,"two_factor_authentication":true,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as Allen1406 
+[info] 

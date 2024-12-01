@@ -1,0 +1,89 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Subtle gradient */
+    color: #e5e5e5;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0;
+    animation: fadeIn 1s ease-in-out; /* Add fade-in animation */
+    position: relative; /* Allows precise positioning of elements */
+}
+
+/* Header Styles */
+header {
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: #ffffff; /* White for visibility */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    margin-bottom: 1rem;
+}
+
+/* Confirmation Message Styles */
+#confirmation-message {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffdd57; /* Bright yellow for emphasis */
+    margin-top: 1rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Countdown Styles */
+#countdown {
+    font-size: 1.4rem;
+    color: #ffffff; /* White text for countdown */
+    margin-top: 1rem;
+    animation: pulse 1.5s infinite; /* Add subtle pulsing animation */
+}
+
+#seconds {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff6b6b; /* Bright red for the countdown number */
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Redirecting Styles */
+#redirecting {
+    font-size: 1rem;
+    color: #ffffff; /* White text for redirecting */
+    margin-top: 100px; /* Pushes redirecting text further down */
+    position: absolute;
+    bottom: 30%; /* Positions it near the bottom of the screen */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}

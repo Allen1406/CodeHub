@@ -1,0 +1,122 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background: #121212;
+    color: #e5e5e5;
+    padding: 2rem;
+}
+
+
+/* Header Styles */
+header {
+    text-align: left; /* Left-align header */
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #ffa500;
+}
+
+/* Form Styles */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #1b1b1b;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #ffa500;
+    text-align: left; /* Left-align label */
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: #e5e5e5;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border: 2px solid #ffa500;
+    background: #444;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    width: 100%;
+    padding: 0.8rem;
+    background: #ffa500;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #121212;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 6px 10px rgba(255, 165, 0, 0.5);
+}
+
+button:hover {
+    background: #3ab0ff;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Error Message Styles */
+.error-message {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 5px;
+    text-align: left; /* Left-align error message */
+}
+
+/* Confirmation Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: left; /* Left-align text in confirmation page */
+    padding: 50px;
+}
+
+h1 {
+    color: #28a745; /* Success color */
+    text-align: left; /* Left-align heading */
+}
+
+p {
+    font-size: 1.2rem;
+    color: #333;
+    text-align: left; /* Left-align paragraph */
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}

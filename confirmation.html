@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation</title>
+    <link rel="stylesheet" href="confirmation.css">
+</head>
+<body>
+    <header>
+        <h1>Your Quote Has Been Submitted!</h1>
+    </header>
+    <main>
+        <p id="confirmation-message">We will contact you shortly.</p>
+        <p id="countdown">Redirecting in <span id="seconds">7</span> seconds...</p>
+    </main>
+
+    <script>
+        // Countdown timer for redirect
+        let countdown = 7;
+        const countdownElement = document.getElementById('seconds');
+
+        const timer = setInterval(() => {
+            countdown--;
+            countdownElement.textContent = countdown;
+            if (countdown <= 0) {
+                clearInterval(timer);
+                window.location.href = 'index.html'; // Redirect to the main website
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

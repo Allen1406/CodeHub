@@ -1,0 +1,376 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background: #121212; /* Charcoal gray background */
+    color: #e5e5e5;
+    overflow-x: hidden;
+    animation: fadeInBody 1.5s ease;
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(90deg, #003366, #004a8f); /* Navy to royal blue gradient */
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    animation: slideDown 1.2s ease;
+}
+
+header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    animation: pulse 2s infinite;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li {
+    margin: 0 15px;
+    animation: fadeInUp 1.5s ease;
+}
+
+header ul li a {
+    color: #e5e5e5;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+header ul li a:hover {
+    color: #ffa500; /* Bright orange for hover */
+    transform: scale(1.1);
+}
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    padding: 6rem 2rem;
+    background: linear-gradient(120deg, #004a8f, #1b1b1b);
+    color: #fff;
+    animation: fadeIn 2s ease-in;
+}
+
+#hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    animation: zoomIn 1.2s ease;
+    color: #ffa500; /* Highlighted orange */
+}
+
+#hero span {
+    color: #3ab0ff; /* Vibrant blue */
+    font-weight: bold;
+}
+
+#hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #ccc;
+    animation: slideUp 1.5s ease-in;
+}
+
+#hero .btn {
+    background: #ffa500;
+    color: #121212;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0px 8px 15px rgba(255, 165, 0, 0.5);
+    animation: bounce 2s infinite;
+}
+
+#hero .btn:hover {
+    background: #3ab0ff;
+    color: #fff;
+    transform: scale(1.2);
+}
+
+/* About Section */
+#about {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: #1b1b1b;
+    position: relative;
+}
+
+#about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 4px;
+    background: linear-gradient(90deg, #003366, #ffa500);
+    animation: growLine 1.5s ease-in-out;
+}
+
+#about h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    color: #ffa500;
+    animation: slideInLeft 1s ease;
+}
+
+#about p {
+    margin: 1rem auto;
+    max-width: 700px;
+    line-height: 1.8;
+    color: #b3b3b3;
+    font-size: 1.2rem;
+    animation: slideInRight 1.5s ease;
+}
+
+/* Show More Button */
+#show-more-btn {
+    margin-top: 1.5rem;
+    padding: 0.7rem 1.5rem;
+    background: #ffa500;
+    color: #121212;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 6px 10px rgba(255, 165, 0, 0.5);
+}
+
+#show-more-btn:hover {
+    background: #3ab0ff;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* Skills Section */
+/* Skills Section */
+#skills {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: linear-gradient(120deg, #003366, #004a8f);
+    animation: fadeIn 2s ease;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap; /* Ensures skills wrap to the next line if needed */
+    gap: 15px; /* Adds spacing between skill items */
+    justify-content: center; /* Center-aligns the skills list */
+    margin-top: 2rem;
+}
+
+.skills-list span {
+    display: inline-block;
+    padding: 0.8rem 1.8rem; /* Increased padding for more prominent skills */
+    margin: 10px; /* Adds consistent spacing around each skill */
+    background: #ffa500;
+    color: #121212;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(255, 165, 0, 0.5); /* Adds a subtle glow effect */
+    animation: bounce 1.5s infinite alternate;
+}
+
+.skills-list span:hover {
+    background: #3ab0ff; /* Changes background color on hover */
+    color: #fff; /* Contrasting color for hover */
+    transform: translateY(-5px); /* Slight lift effect */
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: #1b1b1b;
+    color: #fff;
+    position: relative;
+    animation: fadeInUp 2s ease-in-out; /* Fade-in animation for the entire section */
+}
+
+#contact h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    color: #ffa500;
+    animation: slideInLeft 1s ease;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+    color: #ccc;
+    opacity: 0; /* Initially hidden */
+    animation: fadeInUp 1.5s ease-in-out forwards 1s; /* Fade-in with delay */
+}
+
+.contact-link {
+    color: #ffa500; /* Bright orange for links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.2s ease;
+    opacity: 0; /* Initially hidden */
+    animation: fadeInUp 1.5s ease-in-out forwards 2s; /* Fade-in with delay */
+}
+
+.contact-link:hover {
+    color: #3ab0ff; /* Blue color on hover */
+    transform: scale(1.1);
+}
+
+.contact-form {
+    margin: 20px 0;
+}
+
+#name-input {
+    padding: 10px;
+    margin: 10px;
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+#name-input:focus {
+    outline: none;
+    border: 2px solid #FFA500;
+    box-shadow: 0 0 5px rgba(255, 165, 0, 0.8);
+}
+
+.btn {
+    padding: 12px 25px;
+    background-color: #FFA500;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff7f00;
+    transform: scale(1.05);
+}
+
+.contact-card {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    display: inline-block;
+}
+
+.contact-info {
+    font-size: 1.2rem;
+}
+
+.contact-info a {
+    color: #FFA500;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+#greeting-message {
+    font-size: 1.3rem;
+    margin-top: 20px;
+    color: #FFA500;
+    animation: fadeIn 2s ease-out;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInMessage {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+.hidden {
+    display: none;
+}
